@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/html"> 
+    
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="misc/fb.ico" type="image/x-icon" />
+        <title>Welcome To Digital Gopalganj.</title>
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-Frame-Options" content="deny">
+                <meta name="description" content="">
+        <!-- =============== tt canonical start =============================== -->
+                <link rel="canonical" href="index.html">
+        <!-- =============== tt canonical End =============================== -->
+
+                <link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/base.css" />
+				<link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/skeleton.css" />
+				<link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/style.css" />
+				<link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/meganizr.css" />
+				<link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/stylesheets/demo.css" />
+				<link type="text/css" rel="stylesheet" media="all" href="npfadmin/public/css/flaticon/flaticon.css" />
+				<link type="text/css" rel="stylesheet" media="all" href="themes/responsive_npf/templates/ministry/style.css" />
+    <!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>-->
+        <script type="text/javascript" src="../code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+        <script>
+            //jq160 = jQuery.noConflict( true );
+        </script>
+        <link rel="stylesheet" href="themes/responsive_npf/stylesheets/responsiveslides.css">
+        <link rel="stylesheet" href="themes/responsive_npf/templates/ministry/responsive.css">
+        <link rel="stylesheet" href="themes/responsive_npf/stylesheets/district.css">        
+		<script src="themes/responsive_npf/js/responsiveslides.min.js"></script>
+        <script src="themes/responsive_npf/js/jquery.vticker.js" type="text/javascript"></script>
+
+        <script src="themes/responsive_npf/js/domain_selector.js" type="text/javascript"></script>
+        <script src="themes/responsive_npf/js/utils.js" type="text/javascript"></script>
+        <script type="text/javascript" src="themes/responsive_npf/js/yoxview/yoxview-init.js"></script>
+        
+        <script>
+        
+        function setLanguageCookie(cookieValue) {
+            var today = new Date();
+            var expire = new Date();
+            var cookieName = 'lang';
+            //var cookieValue = "bn";
+            var nDays = 5;
+            expire.setTime(today.getTime() + 3600000 * 24 * nDays);
+            document.cookie = cookieName + "=" + escape(cookieValue)
+                    + ";expires=" + expire.toGMTString();
+        }
+
+        function setLanguage() {
+            $("#lang_form").submit();
+            return false;
+        }
+        $(function () {
+            // Slideshow 4
+            $("#front-image-slider").responsiveSlides({
+                auto: true,
+                pager: false,
+                nav: true,
+                speed: 2000,
+                maxwidth: 960,
+                maxHeight: 230,
+                namespace: "callbacks"
+            });
+            $("#right-content a").click(function () {
+                var url = $(this).attr('href');
+                if (isExternal(url) && url != 'javascript:;') {
+                    openInNewTab(url);
+                    return false;
+                }
+            });
+        });
+        function openInNewTab(url) {
+            var win = window.open(url, '_blank');
+            win.focus();
+        }
+        function isExternal(url) {
+            var match = url.match(/^([^:\/?#]+:)?(?:\/\/([^\/?#]*))?([^?#]+)?(\?[^#]*)?(#.*)?/);
+            if (typeof match[1] === "string" && match[1].length > 0 && match[1].toLowerCase() !== location.protocol)
+                return true;
+            if (typeof match[2] === "string" && match[2].length > 0 && match[2].replace(new RegExp(":(" + {
+                "http:": 80,
+                "https:": 443
+            }[location.protocol] + ")?$"), "") !== location.host)
+                return true;
+            return false;
+        }
+        </script>
+       
+    </head>
+
+    <body class="digital gopalganj">
+        <div id="selection_div"></div>
+        <div class="container">
+            
+            <div class="sixteen columns" style="background-color: #683091; box-shadow: 0 1px 5px #999999;height:auto;border-bottom:4px solid #8bc643;">
+                <div class="three columns" style=" display: inline-block;">
+                </div>
+            </div>
+						
+            <div class="sixteen columns slider">
+                <div class="callbacks_container">
+                    <ul class="rslides" id="front-image-slider" width="100%" height="300">
+		<div class="w3-content w3-section" style="max-width:100%">
+		<img class="mySlides" src="slide_image/sm/1.jpg">
+		<img class="mySlides" src="slide_image/sm/2.jpg">
+		<img class="mySlides" src="slide_image/sm/3.jpg">
+		<img class="mySlides" src="slide_image/sm/4.jpg">
+		<img class="mySlides" src="slide_image/sm/5.jpg">
+		<img class="mySlides" src="slide_image/sm/6.jpg">
+		<img class="mySlides" src="slide_image/sm/7.jpg">
+		<img class="mySlides" src="slide_image/sm/8.jpg">
+		<img class="mySlides" src="slide_image/sm/9.jpg">
+	    </div>		
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 3 seconds
+}
+</script>
+
+
+		</ul> 
+				</div>
+                                
+                <div class="header-site-info" id="header-site-info">
+                    <div>
+                        <div id="logo">
+                        </div>
+                        <div class="clearfix" id="site-name-wrapper">
+                            <span id="site-name"><a title="Home" href="index.html">Digital Gopalganj</a></span>
+                            <span id="slogan">
+                                                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                   		
+		<div class="sixteen columns" id="jmenu">
+            <div class="sixteen columns">
+                <div role="navigation" id="dawgdrops">
+                    <ul class="meganizr mzr-slide mzr-responsive" >
+                        <!-- Build The Menu -->
+                        <li class="col0"><a title="Home" href="index.html">Home</a></li>
+						<li class="col2"><a title="Project / Programeme" href="pp.html">Project&Development</a>
+						<li><a title="Location & Map" href="map.html">Location & Map</a></li>
+						<li><a title="Photo Gallery" href="gallery.html">Photo Gallery</a></li>
+						<li><a title="Information" href="info.html">Information</a></li>
+						<li class="col1"><a title="About Gopalganj" href="aboutg.html">About Gopalganj</a>		
+						<li><a title="About Us Student" href="about.html">About Us Student</a></li></ul></div>
+			</div>
+		</div> 
+		 <!-- End Build The Menu -->
+		 <p>
+	<!---------- Starte Body Main Content--------->
+<marquee><h4>Welcome To Gopalganj::. <font color="#008c00">Gopalganj is a district in the Dhaka division of Bangladesh. The district has about
+ 1,172,415 civilians and its surface area is 1,490 km<sup>2</sup>. The main city of the district is also called Gopalganj.
+ It stands on the bank of the Madhumati river and located at 23000'47.67" N 89049'2141"E. It is bounded  
+ by Faridpur district on the North, Pirojpur and Bagerhat district on the South, Madaripur & Barisal 
+ district the East and Narail district on the West. Gopalganj is subdivided into five sub-districts (upazila/thana).</h4></font></marquee><p></p>
+	<!-------------------------------------------------------------------------------------->
+		<p>  <hr>        
+	<h5><p align="justify"><u>Gopalganj At A Glance:</u><font color="#55009c"></font><br>
+	<h5><p align="justify"><font color="#55009c">Today's Gopalganj city has been developed by Madhumati Kol. 
+	In the ancient times, this area belonged to the Bengal region. In the Sultani and Mughal era, this region ruled by the Hindu kings.
+	During the permanent settlement (1793), Muksudpur upazila of Gopalganj district was part of Jessore district and the remaining part was 
+	in Dhaka-Jalalpur district. In 1807, Muksudpur thana was associated with Jessore district of Faridpur. Jalalpur was the name of a pargana 
+	in Faridpur district. Gopalganj Sadar and Kotalipara belonged to Jalalpur Pargana. In 1812 Chandina (Madhumati) river was fixed as a split
+	line of Jessore and Dhaka-Jalalpur districts. Gopalganj-Madaripur area was a huge wetland. Here the prevalence of river-robbery was more. 
+	For this reason, the division of Bakerganj was established in Madaripur subdivision in 1854.</font></p></h5><hr>
+
+	<h5><p align="justify"><font color="#009e0a">A police station named Gopalganj was formed in 1872 in Madaripur subdivision. 
+	In 1873 Madaripur subdivision was linked with Faridpur district from Bakerganj district. In 1909, the Madaripur subdivision was 
+	formed and the Gopalganj subdivision was formed. Mukadpur thana of Faridpur subdivision with Gopalganj and Kotalipara police station
+	was included in newly formed Gopalganj sub-division.
+	</font></p></h5><hr>
+	
+	<h5><p align="justify"><font color="black">Gopalganj was the first subdivisional commissioner, Mr. Suresh Chandra Sen. In 1910 the Bench
+	Court of the sub-division was elevated to the Criminal Court. In 1921, the city of Gopalganj was upgraded. According to the census,
+	there were only 3,440 people in Gopalganj city. In 1925, civil court was started in Gopalganj.
+	</font></p></h5><hr>
+	
+	<h5><p align="justify"><font color="black">In 1936 Muksudpur Thana was formed and Kashiani Thana was formed. In 1974,
+	a police station named Tungipara was formed to break Gopalganj Sadar Police Station. On 1 February 1984, the Gopalganj subdivision 
+	was upgraded to the district. Gopalganj district's first Deputy Commissioner was Mr. A F. M. Ehia Chowdhury.
+	</font></p></h5><hr>
+	
+	
+		<center>
+		<table cellspacing="0" cellpadding="0" border="1">
+	<tbody>
+		<tr>
+			<td style="width:100px">
+			<p><span style="font-size:16px"><strong>1.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Geographical location</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">Almost 22<sup>০</sup>51' From 23<sup>০</sup>50' North latitude and 89<sup>০</sup>০' From 90<sup>০</sup>10' East longitude&nbsp;</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>2.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Volume:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">1489.92 Square kilometer</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>3.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Total population:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">11,72,415 Person&nbsp; (2011 According to the census of the year)</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Male:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">5,77,868  Person</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Female:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">5,94,547 Person</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Gopalganj Sadar Upazila:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">3,44,008 Person</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Muksudpur Upazila:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">2,89,406 Person</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Kashiani Upazila:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">2,07,615 Person</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Kotalipara upazila:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">2,30,493 Person</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Tungipara upazila:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">1,00,893 Person</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>4.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Population density:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">787 Person Per Square Kilometer (According to the 2011 census)</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>5.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Notable career:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">Farmers, fishermen, employers, teachers, lawyers, businessmen and laborers</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>6.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Parliamentary constituency numbers:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">03, 215 Gopalganj-1&nbsp; (Except Muksudpur-Kashiani (Singa, Hatiara, Puissur, Bethune, Nizamkandi, Orakandi, Fukra Unions)), 216 Gopalganj-2&nbsp; (Gopalganj Sadar-Kashiani (Singa, Hatiara, Piusur, Bethune, Nizamkandi, Orakandi, Fukra Unions)), 217 Gopalganj-3 (Kotalipara, Tungipara)</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px">&nbsp;<strong>7.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Administrative division:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">A)&nbsp; Upazila:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">05 (1) Gopalganj Sadar (2) Muksudpur (3) Kashiani&nbsp; (4) Kotalipara (5) Tungipara</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">B) Total Municipality:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">04&nbsp; (Gopalganj, Kotalipara, Tungipara, Muksudpur)</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">C)Total Union Parishad:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">68&nbsp;&nbsp;&nbsp;</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">D)Total village:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">905</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">E)Mouza:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">653</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="height:50px; width:37px">
+			<p><span style="font-size:16px"><strong>8.</strong></span></p>
+			</td>
+			<td style="height:50px; width:156px">
+			<p><span style="font-size:16px">Postal code</span></p>
+			</td>
+			<td style="height:50px; width:24px">&nbsp;</td>
+			<td style="height:50px; width:378px">&nbsp;</td>
+			<td style="height:50px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Gopalganj Sadar Upazila:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">8100</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="height:34px; width:37px">&nbsp;</td>
+			<td style="height:34px; width:156px">
+			<p><span style="font-size:16px">Kotalipara upazila:</span></p>
+			</td>
+			<td style="height:34px; width:24px">&nbsp;</td>
+			<td style="height:34px; width:378px">
+			<p><span style="font-size:16px">8110</span></p>
+			</td>
+			<td style="height:34px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">&nbsp;</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Tungipara upazila:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">8120</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="height:4px; width:37px">&nbsp;</td>
+			<td style="height:4px; width:156px">
+			<p><span style="font-size:16px">Kashiani Upazila:</span></p>
+			</td>
+			<td style="height:4px; width:24px">&nbsp;</td>
+			<td style="height:4px; width:378px">
+			<p><span style="font-size:16px">8130</span></p>
+			</td>
+			<td style="height:4px">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="height:19px; width:37px">&nbsp;</td>
+			<td style="height:19px; width:156px">
+			<p><span style="font-size:16px">Muksudpur Upazila:</span></p>
+			</td>
+			<td style="height:19px; width:24px">&nbsp;</td>
+			<td style="height:19px; width:378px">
+			<p><span style="font-size:16px">8140</span></p>
+			</td>
+			<td style="height:19px">&nbsp;</td>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>9.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Notable rivers:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td style="width:378px">
+			<p><span style="font-size:16px">Madhumati, Baghari, Ghaghar, Old Kumar, Billrot Kennel, Kaliganga, Tongikhal, Digener, Bagada, Kushiyara, Madhupur, Shaildaha, Chhanda.</span></p>
+			</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>10.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Primary school:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td colspan="2" style="width:380px">
+			<p><span style="font-size:16px">Government 518, Reg 247, total 765&nbsp;</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>11.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Secondary school:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td colspan="2" style="width:380px">
+			<p><span style="font-size:16px">Official 04, private 153, total&nbsp; 157</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>12.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Madrasa:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td colspan="2" style="width:380px">
+			<p><span style="font-size:16px">42 (Ibtedi and Dakhil 21, Alim 12, Fazil 07 and Kamil 2)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>13.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">College:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td colspan="2" style="width:380px">
+			<p><span style="font-size:16px">Government 05, private 16,&nbsp; 21 total</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>14.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">The university:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td colspan="2" style="width:380px">
+			<p><span style="font-size:16px">01 (government)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>15.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Medical college:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td colspan="2" style="width:380px">
+			<p><span style="font-size:16px">01 (government)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>16.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Hospital:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td colspan="2" style="width:380px">
+			<p><span style="font-size:16px">08(government 06, nongoverment 02)</span></p>
+			</td>
+		</tr>
+		<tr>
+			<td style="width:37px">
+			<p><span style="font-size:16px"><strong>17.</strong></span></p>
+			</td>
+			<td style="width:156px">
+			<p><span style="font-size:16px">Prison House:</span></p>
+			</td>
+			<td style="width:24px">&nbsp;</td>
+			<td colspan="2" style="width:380px">
+			<p><span style="font-size:16px">01, A) Institute : 2010, B) Prisoner Capasity: 450</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</center>
+		
+		
+		
+		
+		
+		
+		
+		
+	<!---------- End Body Main Content--------->
+		
+    <!---------- Starte Footer  Manu--------->
+        <div class="footer-artwork" id="footer-artwork">&nbsp;</div>
+        <div class="footer-wrapper full-width" id="footer-wrapper">
+    <div style="float:left; font-size: 18px;">Planning and Implementing :&nbsp;COMPUTER DEPARTMENT,&nbsp;&nbsp;&nbsp;&nbsp;
+	Support:&nbsp;<a href="http://www.facebook.com/sazal96"> SAJAL BISWAS</a> & <a href="https://www.facebook.com/rony.rock.3557"> RAKIBUL ISLAM</a> COMPUTER 3rd Student<br><hr>
+	<center>Copyrights © 2017 <a href="http://www.gopalganj.gov.bd">gopalganj</a>. All Rights Reserved.</center>
+	</div>
+    </div>
+	 <!---------- End Footer  Manu--------->
+		</body>
+
+</html>
